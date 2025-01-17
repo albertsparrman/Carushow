@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oxanium:wght@200..800&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="/news/css/news.css">
+
+    <title>Shop | The Carushow </title>
+    <link rel="shortcut icon" href="/assets/logos/carushowIcon.png" type="image/x-icon">
+</head>
+
+
+<body onload="generateArticles()">
+    <input type="checkbox" id="hamburgerMenu">
+    <label id="nav-icon3" class="hamburger-menu" for="hamburgerMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <nav id="nav">
+        <div class="nav-container">
+            <a href="/index.html" class="logo"><img class="logo" src="/assets/logos/CarushowLogo.svg"
+                    alt="The Carushow"></a>
+            <ul class="link-list">
+                <li class="active-link"><a href="/index.html">Home</a>
+                    <div class="expand-nav-menu-container">
+                        <div class="expand-nav-menu-inner-container">
+                            <ul class="expand-nav-menu">
+                                <li><a href="/index.html#nbaCareer">Career</a></li>
+                                <li><a href="/index.html#nbaSeason">Season stats</a></li>
+                                <li><a href="/index.html#news">News</a></li>
+                                <li><a href="/index.html#shop">Shop</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/news.html">News</a>
+                    <div class="expand-nav-menu-container">
+                        <div class="expand-nav-menu-inner-container">
+                            <ul class="expand-nav-menu">
+                                <li><a href="/news.html#featuredNews">Featured news</a></li>
+                                <li><a href="/news.html#latestNews">Latest news</a></li>
+                                <li><a href="/news.html#allNews">All articles</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="/shop.html">Shop</a>
+                    <div class="expand-nav-menu-container">
+                        <div class="expand-nav-menu-inner-container">
+                            <ul class="expand-nav-menu">
+                                <li><a href="/shop.html#hoodiesAndSweats">Hoodies and Sweatshirts</a></li>
+                                <li><a href="/shop.html#TShirts">T-Shirts</a></li>
+                                <li><a href="/shop.html#Jerseys">Jerseys</a></li>
+                                <li><a href="/shop.html#LongSleeveTees">Long Sleeve Tees</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="dp-flex gap-large">
+                <li><a href="https://x.com/ACFresh21?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank"><img class="social-icon" src="/assets/icons/x.svg" alt="X"></a></li>
+                <li><a href="https://www.instagram.com/acfresh21/?hl=en" target="_blank"><img class="social-icon"
+                            src="/assets/icons/instagram.svg" alt="Instagram"></a>
+                </li>
+                <li><a href="https://www.facebook.com/AlexCarusoOfficial/" target="_blank"><img class="social-icon"
+                            src="/assets/icons/facebook.svg" alt="Facebook"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="nav-background"></div>
+    </nav>
+
+    <div class="outer-container">
+        <main class="dark-background">
+            <div class="featured-news" id="featuredNews">
+                <div class="inner-container featured-news-container">
+                    <div>
+                        <a class="featured-news-title" id="title"
+                            href="https://www.nba.com/news/alex-caruso-thunder-extension?cid=affiliate%3Aimp%3ATakeAds%20Networks%3A123201%3AONLINE_TRACKING_LINK%3A16284&utm_campaign=affiliate-impact-lp-subscription&utm_source=TakeAds%20Networks-123201-ONLINE_TRACKING_LINK-16284&irclickid=WFd0Ep3XvxyKTFF0PESCKXRGUks0V70blQbdyw0&irgwc=1"
+                            target="_blank">Thunder sign Alex Caruso to reported 4-year, $81 million
+                            extension</a>
+
+
+                        <div class="dp-flex gap-large space-between news-large">
+                            <button class="featured-news-item" onclick="changeArticle(0)">
+                                <span class="featured-news-item-title" id="landingFeaturedNewsItem0">Thunder sign Alex
+                                    Caruso to reported 4-year, $81
+                                    million extension</span>
+                                <span>
+                                    <span class="progress-bar-outer">
+                                        <span class="progress-bar-inner" id="progress0"></span>
+                                    </span>
+                                    <span class="news-date" id="landingFeaturedNewsDate0">December 25, 2024</span>
+                                </span>
+                            </button>
+
+                            <button class="featured-news-item" onclick="changeArticle(1)">
+                                <span class="featured-news-item-title" id="landingFeaturedNewsItem1">Caruso holds The
+                                    Alex Caruso Foundation’s inaugural charity golf tournament</span>
+                                <span>
+                                    <span class="progress-bar-outer">
+                                        <span class="progress-bar-inner" id="progress1"></span>
+                                    </span>
+                                    <span class="news-date" id="landingFeaturedNewsDate1">August 26, 2024</span>
+                                </span>
+                            </button>
+
+                            <button class="featured-news-item" onclick="changeArticle(2)">
+                                <span class="featured-news-item-title" id="landingFeaturedNewsItem2">Thunder trade Josh
+                                    Giddey to Bulls in exchange for Alex Caruso</span>
+                                <span>
+                                    <span class="progress-bar-outer">
+                                        <span class="progress-bar-inner" id="progress2"></span>
+                                    </span>
+                                    <span class="news-date" id="landingFeaturedNewsDate2">June 22, 2024</span>
+                                </span>
+                            </button>
+
+                            <button class="featured-news-item" onclick="changeArticle(3)">
+                                <span class="featured-news-item-title" id="landingFeaturedNewsItem3">Bulls' Alex Caruso
+                                    wins 2023-24 NBA Hustle Award</span>
+                                <span>
+                                    <span class="progress-bar-outer">
+                                        <span class="progress-bar-inner" id="progress3"></span>
+                                    </span>
+                                    <span class="news-date" id="landingFeaturedNewsDate3">May 2, 2024</span>
+                                </span>
+                            </button>
+                        </div>
+
+                        <div class="news-small">
+                            <div class="progress-bar-outer">
+                                <div class="progress-bar-inner" id="progress"></div>
+                            </div>
+                            <p class="news-date" id="featuredNewsDate">December 25, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <section id="latestNews">
+                <div class="latest-news-grid-container inner-container">
+                    <a href="https://www.nba.com/thunder/videos/urban-league-with-williams-and-caruso?utm_campaign=affiliate-impact-lp-subscription&utm_source=TakeAds%20Networks-123201-ONLINE_TRACKING_LINK-16284&irclickid=WFd0Ep3XvxyKTFF0PESCKXRGUks0V43blQbdyw0&irgwc=1"
+                        class="latest-news-item" target="_blank">
+                        <img class="latest-news-image" src="/assets/images/urban-league-250107.jpg" alt="">
+                        <div class="latest-news-item-inner-container">
+                            <div class="latest-news-item-inner-text">
+                                <h3 class="news-title">Urban League with Williams and Caruso</h3>
+                                <p class="news-content">
+                                    Thunder players Jalen Williams and Alex Caruso made a surprise appearance at Urban
+                                    League of
+                                    Oklahoma to participate in STEM programs and activities with the students.
+                                </p>
+                            </div>
+
+                            <p class="news-date" id="latest-news-date0">
+                                January 7, 2025
+                            </p>
+                        </div>
+                    </a>
+                    <div class="latest-news-item-small-container">
+                        <a href="https://www.dailythunder.com/thunder-win-13-straight-clippers/"
+                            class="latest-news-item-small" target="_blank">
+                            <div class="latest-news-item-small-inner-container" id="newsSmall1">
+                                <div class="latest-news-item-inner-text">
+                                    <h3 class="news-title">Thunder win 13 straight, cruising past Clippers</h3>
+                                    <p class="news-date">
+                                        January 3, 2025
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.nba.com/news/alex-caruso-thunder-extension?cid=affiliate%3Aimp%3ATakeAds%20Networks%3A123201%3AONLINE_TRACKING_LINK%3A16284&utm_campaign=affiliate-impact-lp-subscription&utm_source=TakeAds%20Networks-123201-ONLINE_TRACKING_LINK-16284&irclickid=WFd0Ep3XvxyKTFF0PESCKXRGUks0V70blQbdyw0&irgwc=1"
+                            class="latest-news-item-small" target="_blank">
+                            <div class="latest-news-item-small-inner-container" id="newsSmall2">
+                                <div class="latest-news-item-inner-text">
+                                    <h3 class="news-title">Thunder sign Alex Caruso to reported 4-year, $81 million
+                                        extension
+                                    </h3>
+                                    <p class="news-date">
+                                        December 25, 2024
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+            <section id="allNews">
+                <div class="inner-container">
+                    <a href="https://www.msn.com/en-us/sports/nba/lebron-james-comments-on-alex-caruso-s-basketball-ability-amid-81-million-extension/ar-AA1wkQq4"
+                        target="_blank" class="all-news-article dp-flex gap-small">
+                        <img class="all-news-article-image"
+                            src="/assets/images/USATSI_16152861-scaled-e1627868905895-1024x683.jpg" alt="">
+                        <div class="all-news-article-inner">
+                            <h3 class="all-news-article-title">
+                                LeBron James comments on Alex Caruso's ability amid $81 million extension
+                            </h3>
+                            <p class="all-news-article-content">
+                                Thirty-year-old guard Alex Caruso inked a four-year, $81 million contract extension for
+                                the
+                                surging
+                                22-5 Oklahoma City Thunder. The move is a landmark deal for an undrafted player LeBron
+                                James
+                                once
+                                described as someone who "gives us everything."
+                            </p>
+                            <p class="news-date">
+                                December 23, 2024
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.msn.com/en-us/sports/nba/alex-caruso-reacts-to-contract-extension-excited-for-long-term-future-with-thunder/ar-AA1wnIP3"
+                        target="_blank" class="all-news-article dp-flex gap-small">
+                        <img class="all-news-article-image" src="/assets/images/caruso-getty.webp" alt="">
+                        <div class="all-news-article-inner">
+                            <h3 class="all-news-article-title">
+                                Alex Caruso reacts to contract extension, excited for long-term future with Thunder
+                            </h3>
+                            <p class="all-news-article-content">
+                                The Oklahoma City Thunder gifted their fans an early Christmas present. A little over a
+                                day
+                                after he
+                                became eligible, Alex Caruso was signed to a four-year, $81 million extension.
+                            </p>
+                            <p class="news-date">
+                                December 23, 2024
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.si.com/nba/thunder/news/stiles-points-alex-caruso-finding-groove-with-okc-thunder-dec-21"
+                        target="_blank" class="all-news-article dp-flex gap-small">
+                        <img class="all-news-article-image" src="/assets/images/960x0.webp" alt="">
+                        <div class="all-news-article-inner">
+                            <h3 class="all-news-article-title">
+                                Stiles Points: Alex Caruso Finding Groove With OKC Thunder
+                            </h3>
+                            <p class="all-news-article-content">
+                                The Oklahoma City Thunder have tasked Alex Caruso with being a key piece off the bench
+                                who
+                                is also
+                                asked to close games. The Thunder, saw the newly acquired player struggle out of the
+                                gate
+                                before
+                                coming onto the scene.
+                            </p>
+                            <p class="news-date">
+                                December 21, 2024
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.nbcsports.com/nba/news/alex-caruso-hopes-to-sign-extension-to-remain-in-oklahoma-city"
+                        target="_blank" class="all-news-article dp-flex gap-small">
+                        <img class="all-news-article-image" src="/assets/images/ycajtff0oc0iythmjmtq.jpg" alt="">
+                        <div class="all-news-article-inner">
+                            <h3 class="all-news-article-title">
+                                Alex Caruso hopes to sign extension to remain in Oklahoma City
+                            </h3>
+                            <p class="all-news-article-content">
+                                Alex Caruso is a hand-in-glove fit with the Oklahoma City Thunder, an elite wing
+                                defender
+                                who is a
+                                threat from 3 and can do some secondary ball handling. Coach Mark Daigneault can bring
+                                him
+                                off the
+                                Thunder bench and they do not lose a step.
+                            </p>
+                            <p class="news-date">
+                                "December 21, 2024
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.nba.com/news/starting-5-dec-15-bucks-thunder-set-for-emirates-nba-cup-title-showdown-in-las-vegas?cid=affiliate%3Aimp%3ATakeAds%20Networks%3A123201%3AONLINE_TRACKING_LINK%3A16284&utm_campaign=affiliate-impact-lp-subscription&utm_source=TakeAds%20Networks-123201-ONLINE_TRACKING_LINK-16284&irclickid=WFd0Ep3XvxyKTFF0PESCKXRGUks0XfRjlQbdyw0&irgwc=1"
+                        target="_blank" class="all-news-article dp-flex gap-small">
+                        <img class="all-news-article-image" src="/assets/images/GettyImages-1870339931-scaled.jpg"
+                            alt="">
+                        <div class="all-news-article-inner">
+                            <h3 class="all-news-article-title">
+                                Starting 5, Dec. 15: Bucks, Thunder set for Emirates NBA Cup title showdown in Las Vegas
+                            </h3>
+                            <p class="all-news-article-content">
+                                SGA and the Thunder will face Giannis and the Bucks in Tuesday's Emirates NBA Cup
+                                championship (8:30
+                                ET, ABC).
+                            </p>
+                            <p class="news-date">
+                                December 15, 2024
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.sportskeeda.com/basketball/news-alex-caruso-makes-feelings-known-okc-s-championship-chances"
+                        target="_blank" class="all-news-article dp-flex gap-small">
+                        <img class="all-news-article-image" src="/assets/images/01jdx2xyesp1z6sh3k2t.webp" alt="">
+                        <div class="all-news-article-inner">
+                            <h3 class="all-news-article-title">
+                                Alex Caruso makes his feelings known about OKC's championship chances
+                            </h3>
+                            <p class="all-news-article-content">
+                                Currently, Alex Caruso and the Oklahoma City Thunder are sitting atop the NBA's Western
+                                Conference
+                                with a record of 19-5. While there's still plenty more basketball left to play this
+                                season,
+                                the team
+                                has shown that even in the face of adversity, they are one of the top teams in the
+                                league.
+                            </p>
+                            <p class="news-date">
+                                December 14, 2024"
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.kbtx.com/2024/08/26/caruso-holds-alex-caruso-foundations-inaugural-charity-golf-tournament/"
+                        target="_blank" class="all-news-article dp-flex gap-small">
+                        <img class="all-news-article-image"
+                            src="/assets/images/457217021_1081986663298825_2932003101721096380_n.jpg" alt="">
+                        <div class="all-news-article-inner">
+                            <h3 class="all-news-article-title">
+                                Caruso holds The Alex Caruso Foundation’s inaugural charity golf tournament
+                            </h3>
+                            <p class="all-news-article-content">
+                                BRYAN, Texas (KBTX) - Former Texas A&M men’s basketball star Alex Caruso held his
+                                inaugural
+                                Alex
+                                Caruso Foundation charity golf tournament at Miramont Country Club.
+                            </p>
+                            <p class="news-date">
+                                August 26, 2024
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.nba.com/news/bulls-thunder-alex-caruso-josh-giddey-trade?cid=affiliate%3Aimp%3ATakeAds%20Networks%3A123201%3AONLINE_TRACKING_LINK%3A16284&utm_campaign=affiliate-impact-lp-subscription&utm_source=TakeAds%20Networks-123201-ONLINE_TRACKING_LINK-16284&irclickid=WFd0Ep3XvxyKTFF0PESCKXRGUks0XfVKlQbdyw0&irgwc=1"
+                        target="_blank" class="all-news-article dp-flex gap-small">
+                        <img class="all-news-article-image"
+                            src="/assets/images/USATSI_19786778-scaled-e1718918590721.jpg" alt="">
+                        <div class="all-news-article-inner">
+                            <h3 class="all-news-article-title">
+                                Thunder trade Josh Giddey to Bulls in exchange for Alex Caruso
+                            </h3>
+                            <p class="all-news-article-content">
+                                Oklahoma City adds one of the NBA's best on-ball defenders, while Chicago acquires a
+                                playmaker with
+                                untapped potential.
+                            </p>
+                            <p class="news-date">
+                                June 22, 2024
+                            </p>
+                        </div>
+                    </a>
+                    <a href="https://www.nba.com/news/alex-caruso-2023-24-nba-hustle-award?cid=affiliate%3Aimp%3ATakeAds%20Networks%3A123201%3AONLINE_TRACKING_LINK%3A16284&utm_campaign=affiliate-impact-lp-subscription&utm_source=TakeAds%20Networks-123201-ONLINE_TRACKING_LINK-16284&irclickid=WFd0Ep3XvxyKTFF0PESCKXRGUks0XfSClQbdyw0&irgwc=1"
+                        target="_blank" class="all-news-article dp-flex gap-small">
+                        <img class="all-news-article-image" src="/assets/images/7WIC7FFOL5NY7GFJYKIUANGHFY.jpg" alt="">
+                        <div class="all-news-article-inner">
+                            <h3 class="all-news-article-title">
+                                Bulls' Alex Caruso wins 2023-24 NBA Hustle Award
+                            </h3>
+                            <p class="all-news-article-content">
+                                The Bulls' defensive-minded guard wins the honor for the first time in the award’s
+                                8-year
+                                history.
+                            </p>
+                            <p class="news-date">
+                                May 2, 2024
+                            </p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+
+
+    <footer>
+        <div class="inner-container footer-grid">
+            <ul>
+                <li><a href="/index.html" class="footer-parent">Home</a>
+                    <ul class="footer-sublinks">
+                        <li><a href="/index.html#nbaCareer">Career</a></li>
+                        <li><a href="/index.html#nbaSeason">Season stats</a></li>
+                        <li><a href="/index.html#news">News</a></li>
+                        <li><a href="/index.html#shop">Shop</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/news.html" class="footer-parent">News</a>
+                    <ul class="footer-sublinks">
+                        <li><a href="/news.html#featuredNews">Featured news</a></li>
+                        <li><a href="/news.html#latestNews">Latest news</a></li>
+                        <li><a href="/news.html#allNews">All articles</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/shop.html" class="footer-parent">Shop</a>
+                    <ul class="footer-sublinks">
+                        <li><a href="/shop.html#hoodiesAndSweats">Hoodies and Sweatshirts</a></li>
+                        <li><a href="/shop.html#TShirts">T-Shirts</a></li>
+                        <li><a href="/shop.html#Jerseys">Jerseys</a></li>
+                        <li><a href="/shop.html#LongSleeveTees">Long Sleeve Tees</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="footer-social-list">
+                <li><a class="dp-flex align-center gap-medium"
+                        href="https://x.com/ACFresh21?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                        target="_blank"><img class="footer-icon" src="/assets/icons/x.svg" alt="X"> @ACFresh21</a></li>
+                <li><a class="dp-flex align-center gap-medium" href="https://www.instagram.com/acfresh21/?hl=en"
+                        target="_blank"><img class="footer-icon" src="/assets/icons/instagram.svg" alt="Instagram">
+                        @ACFresh21</a></li>
+                <li><a class="dp-flex align-center gap-medium" href="https://www.facebook.com/AlexCarusoOfficial/"
+                        target="_blank"><img class="footer-icon" src="/assets/icons/facebook.svg" alt="Facebook">
+                        @AlexCarusoOfficial</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="nav.js"></script>
+    <script src="news.js"></script>
+</body>
+
+</html>

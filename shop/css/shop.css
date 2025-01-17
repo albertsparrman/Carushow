@@ -1,0 +1,80 @@
+.shop-section-title {
+    font-size: 2.5em;
+    font-family: "Inter", sans-serif;
+    margin-bottom: 1em;
+    color: var(--color-light);
+}
+
+
+.shop-section {
+    position: relative;
+    padding-top: 8em;
+    margin-top: 0em;
+    margin-bottom: -2em;
+    background-color: var(--color-dark);
+}
+
+.shop-section:nth-last-child(1) {
+    padding-bottom: 10em;
+}
+
+
+#Jerseys {
+    background-image: url(/assets/images/okcBackground.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+.shop-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(20em, 1fr));
+    gap: 2em;
+}
+
+.landing-shop-card {
+    position: relative;
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-small);
+    padding: 2em;
+    transition: transform 0.2s;
+}
+
+.webshop-logo {
+    height: 3em;
+    padding: 0.5em 0;
+}
+
+.landing-shop-card:hover {
+    transform: scale(1.03);
+}
+
+.product-image {
+    width: 100%;
+    max-width: 15em;
+}
+
+.product-content {
+    width: 100%;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.3em;
+}
+
+.product-price {
+    font-size: 1.2em;
+    margin-top: 0.6em;
+}

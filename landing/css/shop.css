@@ -1,0 +1,98 @@
+#shop {
+    position: relative;
+    margin-top: -8em;
+    padding-top: 6em;
+    padding-bottom: 5em;
+    overflow: hidden;
+}
+
+.shop-grid {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fit, minmax(20em, 1fr));
+    gap: 2em;
+}
+
+.landing-shop-card {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: var(--border-radius-small);
+    padding: 2em;
+    transition: transform 0.2s;
+}
+
+.landing-shop-card:hover {
+    transform: scale(1.03);
+}
+
+.product-image {
+    width: 100%;
+    max-width: 15em;
+}
+
+.webshop-logo {
+    height: 3em;
+    padding: 0.5em 0;
+}
+
+.product-content {
+    width: 100%;
+    padding-top: 1em;
+    text-align: center;
+}
+
+.product-title {
+    font-size: 1.2em;
+}
+
+.product-price {
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.shop-expand-circle {
+    position: absolute;
+    left: -12em;
+    bottom: -12em;
+    text-align: center;
+    transform: translate(-50%, 50%);
+    height: 50em;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: var(--color-secondary);
+    transition: height 1s;
+}
+
+.tower-background {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 8em;
+    mix-blend-mode: multiply;
+    transition: height 1s;
+}
+
+.shop-more-button {
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-radius: var(--border-radius-small);
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 4em;
+    padding: 1.2em 2em;
+    transition: transform 0.5s;
+}
+
+.shop-more-button:hover {
+    transform: scale(1.05);
+}

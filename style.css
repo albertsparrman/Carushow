@@ -1,0 +1,123 @@
+:root {
+    --color-primary: #DBCCB8;
+    --color-secondary: #AE2D2F;
+    --color-dark: #161616;
+    --color-light: #F0F0F0;
+
+    --border-radius-large: 1em;
+    --border-radius-small: 0.5em;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-family: "Oxanium", serif;
+    font-weight: 700;
+}
+
+h3,
+h4 {
+    font-family: "Inter", sans-serif;
+}
+
+p, button {
+    font-family: "Inter", sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    font-family: "Inter", sans-serif;
+    text-decoration: none;
+    color: var(--color-light);
+}
+
+
+.page-border {
+    width: calc(100vw - 3em);
+    height: calc(100vh - 3em);
+    border: 1.5em solid;
+}
+
+
+html,
+body {
+    background-color: var(--color-dark);
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+main {
+    background-color: var(--color-primary);
+}
+
+.dp-flex {
+    display: flex;
+}
+
+.gap-small {
+    gap: 0.5em;
+}
+
+.gap-medium {
+    gap: 1em;
+}
+
+.gap-large {
+    gap: 2em;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 3em;
+}
+
+.outer-container {
+    max-width: 2600px;
+    margin: 0 auto;
+}
+
+.inner-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.dark-background {
+    background-color: var(--color-dark);
+}
+
+@media only screen and (min-width: 1600px) { 
+    .inner-container {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    html,
+    body {
+        font-size: 12px;
+    }
+
+    .inner-container {
+        width: calc(100vw - 6em);
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}

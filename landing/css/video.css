@@ -1,0 +1,28 @@
+.video-container {
+    position: relative;
+    max-height: 1200px;
+}
+.video-section-background {
+    background-color: var(--color-dark);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: calc(100% - 10vh);
+    background-image: url(/assets/logos/logoBackground.svg);
+    background-position: left 15% bottom -1%;
+    background-size: 140%;
+    background-repeat: no-repeat;
+}
+
+#landingVideo {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0 auto;
+    margin-top: calc(-10vh);
+    padding-bottom: 26em;
+    width: 70em;
+    max-width: calc(100vw - 6em);
+    border-radius: var(--border-radius-large);
+    z-index: 2;
+}

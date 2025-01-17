@@ -1,0 +1,57 @@
+header {
+    position: relative;
+    height: 110vh;
+    background-image: url(/assets/images/aerial-tamu-campus-entrance.JPG);
+    background-size: cover;
+}
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-main-content-container {
+    position: relative;
+    filter: drop-shadow(0 0.2em 0.8em #16161649);
+}
+
+.header-logo-text {
+    position: absolute;
+    left: 21.5%;
+    top: 13.5%;
+    color: var(--color-light);
+    font-weight: 600;
+    transform: skewX(-15deg) rotate(-6deg);
+    animation: welcome 1 1.5s;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 9.5em;
+}
+
+#headerLogo {
+    width: 28em;
+    animation: carushow 1 1.3s;
+}
+
+@keyframes welcome {
+    0% {
+        width: 0em;
+    }
+}
+
+@keyframes carushow {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    20% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    99% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

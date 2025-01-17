@@ -8,7 +8,7 @@
     bottom: 0;
     width: 100%;
     height: calc(100% - 10vh);
-    background-image: url(/assets/logos/logoBackground.svg);
+    background-image: url(./assets/logos/logoBackground.svg);
     background-position: left 15% bottom -1%;
     background-size: 140%;
     background-repeat: no-repeat;

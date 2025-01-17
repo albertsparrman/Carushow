@@ -20,7 +20,7 @@
 
 
 #Jerseys {
-    background-image: url(/assets/images/okcBackground.svg);
+    background-image: url(./assets/images/okcBackground.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

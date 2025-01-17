@@ -6,7 +6,7 @@
 }
 
 .featured-news {
-    background-image: url(/assets/images/GbLFMTDXIAARotk.jpg);
+    background-image: url(./assets/images/GbLFMTDXIAARotk.jpg);
     box-shadow: inset 0px -250px 500px var(--color-dark);
     background-color: var(--color-dark);
     background-size: cover;
@@ -212,12 +212,12 @@
 
 
 #newsSmall1 {
-    background-image: url(/assets/images/untitled-design_2025-01-03_12-16-14.jpg);
+    background-image: url(./assets/images/untitled-design_2025-01-03_12-16-14.jpg);
     background-size: cover;
 }
 
 #newsSmall2 {
-    background-image: url(/assets/images/GbLFMTDXIAARotk.jpg);
+    background-image: url(./assets/images/GbLFMTDXIAARotk.jpg);
     background-size: cover;
 }
 

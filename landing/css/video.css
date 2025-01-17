@@ -1,6 +1,7 @@
 .video-container {
     position: relative;
     max-height: 1200px;
+    padding-bottom: 26em;
 }
 .video-section-background {
     background-color: var(--color-dark);
@@ -20,7 +21,6 @@
     display: block;
     margin: 0 auto;
     margin-top: calc(-10vh);
-    padding-bottom: 26em;
     width: 70em;
     max-width: calc(100vw - 6em);
     border-radius: var(--border-radius-large);

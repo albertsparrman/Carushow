@@ -47,7 +47,7 @@ function autoChangeArticle(article) {
 }
 
 async function getData() {
-    const res = await fetch("/news.json")
+    const res = await fetch("./news.json")
     const data = await res.json()
 
     return data

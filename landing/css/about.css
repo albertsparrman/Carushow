@@ -144,7 +144,7 @@
 
 .box-team-logo {
     background-color: var(--color-dark);
-    background-image: url(./assets/logos/thunder-beige.svg);
+    background-image: url(../../assets/logos/thunder-beige.svg);
     background-position: left -110% top -200%;
     background-size: 300%;
     width: 3em;
